@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turncoat-chess"
+version = "0.1.0"
+description = "Turncoat/Swap Chess engine on top of python-chess"
+authors = [{ name = "Juni", email = "noreply@example.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "python-chess>=1.999, <2.0",
+  "pytest>=7.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["."]
